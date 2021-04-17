@@ -14,8 +14,8 @@ ctrlFrom.createForm = async (req, res) => {
   res.json({ message: "Form created" });
 };
 ctrlFrom.getForm= async (req,res)=>{
-  // const notes= await formModul.find()
-  // res.json(notes)
+  const form= await formModul.find()
+  res.json(form)
   res.send('hello from api')
 }
 
