@@ -13,5 +13,6 @@ app.use(express.json())
 // Routes
 
 app.use('/api/form',require('./routes/form'))
+app.get('/',(req,res)=>res.send('hello'))
 
 module.exports=app
