@@ -8,7 +8,8 @@ mongoose.connect(URI,{
     useNewUrlParser:true,
     useCreateIndex:true,
     useUnifiedTopology:true,
-    useFindAndModify:false
+    useFindAndModify:false,
+    ssl: { "rejectUnauthorized": false }
 })
 
 const connection = mongoose.connection
