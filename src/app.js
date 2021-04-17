@@ -12,6 +12,6 @@ app.use(express.json())
 
 // Routes
 
-app.use('/api/form',require('./routes/form'))
+app.use('https://miltondw.herokuapp.com/api/form',require('./routes/form'))
 
 module.exports=app
